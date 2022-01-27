@@ -24,16 +24,16 @@ Giants = Team.new('Giants', 67, 45, 8)
 Giants.show_team_result
 
 Tigers = Team.new('Tigers', 60, 53, 7)
-.show_team_result
+Tigers.show_team_result
 
 Dragons = Team.new('Dragons', 60, 55, 5)
-.show_team_result
+Dragons.show_team_result
 
 BayStars = Team.new('BayStars', 56, 58, 6)
-.show_team_result
+BayStars.show_team_result
 
-Carp = Team.new('Carp', 56, 52, 12)
-.show_team_result
+Carp = Team.new('Carp', 52, 56, 12)
+Carp.show_team_result
 
 Swallows = Team.new('Swallows', 42, 69, 10)
-.show_team_result
+Swallows.show_team_result
