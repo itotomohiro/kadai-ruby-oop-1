@@ -1,3 +1,39 @@
 class Team
   
+  attr_accessor :name, :win, :lose, :draw
+  
+  def initialize(name, win, lose, draw)
+    self.name = name
+    self.win = win
+    self.lose = lose
+    self.draw = draw
+  end
+  
+  def calc_win_rate
+    win_rate = win.to_f / ( win.to_f + lose.to_f)
+    return win_rate
+  end
+    
+  def show_team_result
+    puts "#{self.name} の2020年の成績は #{self.win}勝 #{self.lose}敗 #{self.draw}分、勝率は #{self.calc_win_rate}です。"
+  end
+  
 end
+
+Giants = Team.new('Giants', 67, 45, 8)
+Giants.show_team_result
+
+Tigers = Team.new('Tigers', 60, 53, 7)
+.show_team_result
+
+Dragons = Team.new('Dragons', 60, 55, 5)
+.show_team_result
+
+BayStars = Team.new('BayStars', 56, 58, 6)
+.show_team_result
+
+Carp = Team.new('Carp', 56, 52, 12)
+.show_team_result
+
+Swallows = Team.new('Swallows', 42, 69, 10)
+.show_team_result
